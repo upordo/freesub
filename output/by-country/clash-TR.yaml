@@ -12,6 +12,21 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: rSeYcig_XBy8q3k33NpK3A
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: 91.228.227.211
+  port: 23957
+  udp: true
+  type: vmess
+  uuid: 92987ab8-0a53-4a16-8d6c-295d5df86404
+  alterId: 0
+  cipher: auto
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  server: 153.52.92.81
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: IXa3ylzS_jBOAsQy071tIQ
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   server: 156.67.63.231
   port: 443
   udp: true
@@ -23,8 +38,8 @@ proxies:
     public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -35,7 +50,42 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  server: helixgaming.ir
+  port: 80
+  udp: true
+  type: vless
+  uuid: c0e453eb-33ac-4206-8423-3e1286c2ba7a
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
+- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  server: antar.cdkshop.ir
+  port: 8086
+  udp: true
+  type: vless
+  uuid: 01271baa-c5e3-4e2d-b43e-2c963c5bc21f
+  tls: true
+  reality-opts:
+    public-key: nnq5J3zXFDHUGvCza7e5CMa34oexEcXUqAfqz_YY7yo
+    short-id: 5b58b0
+  servername: pro.radeon.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 08 - xiaohe
+  server: content3.movieham.ir
+  port: 5494
+  udp: true
+  type: vless
+  uuid: 7e0faccc-1d74-4ddf-bbdf-7258e155115d
+  tls: true
+  reality-opts:
+    public-key: SzDv43wbpLLk6ADfHa8P6lsHTEa1d3zf6BSzVtdsHSc
+    short-id: dfa0ae38b2eba4c8
+  servername: play.google.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +94,11 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +107,10 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 08 - xiaohe
 rules:
 - MATCH,PROXIES
