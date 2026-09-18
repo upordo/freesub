@@ -5,20 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 95.217.237.195
-  port: 10210
+  server: 82.47.186.18
+  port: 19290
   udp: true
-  type: vless
-  uuid: d65a82af-a403-405e-8b7b-27a68b830511
-  tls: true
-  reality-opts:
-    public-key: twRm8a1BBdz2Q5jTuNbXxA7ZdtDPAyQNEycDYkW9DFc
-    short-id: 13121b7150ad7fc6
-  servername: play-apps-features.googleusercontent.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
+  type: ss
+  cipher: aes-128-gcm
+  password: o2rw2hICwu1blrr_gZAl2Q
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 95.216.27.15
   port: 2053
@@ -30,7 +22,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 185.79.138.71
   port: 448
@@ -93,14 +85,15 @@ proxies:
   reality-opts:
     public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
   servername: est1313.ggisopi.su
-  client-fingerprint: edge
+  client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
-  server: 82.47.186.18
-  port: 19290
+  server: fr.vpn.legendaah.xyz
+  port: 36723
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: o2rw2hICwu1blrr_gZAl2Q
+  type: hysteria2
+  password: Krab9Hyst2_Rk7pQ2xL
+  sni: fr.vpn.legendaah.xyz
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 09 - xiaohe
   server: 185.255.179.11
   port: 9443
@@ -108,11 +101,23 @@ proxies:
   type: vless
   uuid: d9d0f208-d582-41d5-bb7b-742671402810
   tls: true
-  servername: hub-se-03.hanvpn.cc
+  servername: hub-fi-02.hanvpn.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: fi02-grpc-8e47a
+- name: 🇫🇮 芬兰 (Finland) 10 - xiaohe
+  server: 150.241.71.148
+  port: 448
+  udp: true
+  type: trojan
+  password: 6fY77UmuJ6BEK7n0qv433JrPNjCMeZQV
+  sni: kiev.gosgenarchive.com
   skip-cert-verify: false
   network: grpc
   grpc-opts:
-    grpc-service-name: se03-grpc-8e47a
+    grpc-service-name: TrojanGRPC
 proxy-groups:
 - name: PROXIES
   type: select
@@ -127,6 +132,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
   - 🇫🇮 芬兰 (Finland) 08 - xiaohe
   - 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 10 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -141,5 +147,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 07 - xiaohe
   - 🇫🇮 芬兰 (Finland) 08 - xiaohe
   - 🇫🇮 芬兰 (Finland) 09 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 10 - xiaohe
 rules:
 - MATCH,PROXIES

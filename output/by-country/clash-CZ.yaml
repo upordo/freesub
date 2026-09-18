@@ -5,8 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 31.59.121.156
+  server: 138.68.142.165
   port: 2053
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /resource/channel?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
+  server: 164.92.147.213
+  port: 2087
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -16,21 +31,7 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /go/library/channel?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇨🇿 捷克 (Czech) 02 - xiaohe
-  server: 165.232.39.212
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /html/shows?ed=2560fp=chrome
+    path: /city/my?ed=2560
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
