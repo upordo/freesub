@@ -4,24 +4,11 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
-      "server": "119.46.51.45",
-      "server_port": 37515,
-      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-      "server": "104.16.10.185",
-      "server_port": 443,
+      "tag": "🇹🇭 泰国 (Thailand) 01 - xiaohe",
+      "server": "103.86.49.57",
+      "server_port": 80,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
-      "tls": {
-        "enabled": true,
-        "server_name": "v2ray.simspeedup.com",
-        "insecure": false
-      },
       "transport": {
         "type": "ws",
         "path": "/ws",
@@ -32,7 +19,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 03 - xiaohe",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaohe",
       "server": "140.235.38.206",
       "server_port": 443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
@@ -54,26 +41,22 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇭 泰国 (Thailand) 04 - xiaohe",
-      "server": "118.193.57.167",
-      "server_port": 49667,
-      "uuid": "d46bf492-45f4-4c33-82d1-ea2a1cb54eb6",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/d46bf492"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 05 - xiaohe",
-      "server": "103.86.49.57",
-      "server_port": 80,
+      "tag": "🇹🇭 泰国 (Thailand) 03 - xiaohe",
+      "server": "104.16.10.185",
+      "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray.simspeedup.com",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/ws"
+        "path": "/ws",
+        "headers": {
+          "Host": "v2ray.simspeedup.com"
+        }
       }
     },
     {
@@ -83,9 +66,7 @@
         "auto",
         "🇹🇭 泰国 (Thailand) 01 - xiaohe",
         "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 03 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 04 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 05 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 03 - xiaohe"
       ]
     },
     {
@@ -94,9 +75,7 @@
       "outbounds": [
         "🇹🇭 泰国 (Thailand) 01 - xiaohe",
         "🇹🇭 泰国 (Thailand) 02 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 03 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 04 - xiaohe",
-        "🇹🇭 泰国 (Thailand) 05 - xiaohe"
+        "🇹🇭 泰国 (Thailand) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
