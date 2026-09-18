@@ -5,24 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 153.52.92.81
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: IXa3ylzS_jBOAsQy071tIQ
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 156.67.63.231
-  port: 443
+  server: 89.251.8.205
+  port: 80
   udp: true
   type: vless
-  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
-  flow: xtls-rprx-vision
+  uuid: c0e453eb-33ac-4206-8423-3e1286c2ba7a
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: antar.cdkshop.ir
+  port: 8086
+  udp: true
+  type: vless
+  uuid: 01271baa-c5e3-4e2d-b43e-2c963c5bc21f
   tls: true
   reality-opts:
-    public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
-    short-id: 5606d4a25c99e7af
-  servername: sync-bridge.org
+    public-key: nnq5J3zXFDHUGvCza7e5CMa34oexEcXUqAfqz_YY7yo
+    short-id: 5b58b0
+  servername: pro.radeon.com
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   server: 78.135.73.47
@@ -38,15 +41,13 @@ proxies:
   servername: www.datadoghq.com
   client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  server: me17.msjia8844.site
-  port: 7443
+  server: 139.28.240.68
+  port: 2086
   udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+  type: vmess
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
 - name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
   server: 151.241.226.201
   port: 2053
@@ -58,30 +59,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  server: antar.cdkshop.ir
-  port: 8086
-  udp: true
-  type: vless
-  uuid: 01271baa-c5e3-4e2d-b43e-2c963c5bc21f
-  tls: true
-  reality-opts:
-    public-key: nnq5J3zXFDHUGvCza7e5CMa34oexEcXUqAfqz_YY7yo
-    short-id: 5b58b0
-  servername: pro.radeon.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 07 - xiaohe
-  server: helixgaming.ir
-  port: 80
-  udp: true
-  type: vless
-  uuid: c0e453eb-33ac-4206-8423-3e1286c2ba7a
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: play.google.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,8 +70,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -104,7 +80,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 06 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 07 - xiaohe
 rules:
 - MATCH,PROXIES
