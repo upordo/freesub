@@ -16,14 +16,14 @@
       "tag": "🇳🇴 挪威 (Norway) 02 - xiaohe",
       "server": "151.242.168.125",
       "server_port": 390,
-      "uuid": "7b363f9c-3df9-4b60-a789-9cd36be0bdfe",
+      "uuid": "b02ff150-ee30-46e0-9ea1-adbfd7762a06",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "bowandbead.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -43,7 +43,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -73,6 +73,14 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇳🇴 挪威 (Norway) 05 - xiaohe",
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16291,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -80,7 +88,8 @@
         "🇳🇴 挪威 (Norway) 01 - xiaohe",
         "🇳🇴 挪威 (Norway) 02 - xiaohe",
         "🇳🇴 挪威 (Norway) 03 - xiaohe",
-        "🇳🇴 挪威 (Norway) 04 - xiaohe"
+        "🇳🇴 挪威 (Norway) 04 - xiaohe",
+        "🇳🇴 挪威 (Norway) 05 - xiaohe"
       ]
     },
     {
@@ -90,7 +99,8 @@
         "🇳🇴 挪威 (Norway) 01 - xiaohe",
         "🇳🇴 挪威 (Norway) 02 - xiaohe",
         "🇳🇴 挪威 (Norway) 03 - xiaohe",
-        "🇳🇴 挪威 (Norway) 04 - xiaohe"
+        "🇳🇴 挪威 (Norway) 04 - xiaohe",
+        "🇳🇴 挪威 (Norway) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
