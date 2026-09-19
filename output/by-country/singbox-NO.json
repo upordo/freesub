@@ -23,7 +23,7 @@
         "server_name": "bowandbead.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -43,7 +43,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -63,7 +63,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -73,12 +73,16 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "hysteria2",
       "tag": "🇳🇴 挪威 (Norway) 05 - xiaohe",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16291,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
+      "server": "46.8.210.129",
+      "server_port": 22443,
+      "password": "2a3b101d-d8f9-40e7-9373-b0ef487c0035",
+      "tls": {
+        "enabled": true,
+        "server_name": "disk.api-yandex.net",
+        "insecure": false
+      }
     },
     {
       "type": "selector",
