@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 64.225.65.116
-  port: 8443
+  server: 164.92.147.213
+  port: 2087
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -15,46 +15,76 @@ proxies:
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /bd/pictures
+    path: /city/my
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  server: 147.90.229.204
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sort/outbound/redirect.php?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 91.240.86.70
   port: 22443
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
+  sni: itsallproxy.quattro-tech.ru
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 46.8.200.91
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  server: 144.31.218.10
   port: 443
   udp: true
   type: vless
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: cf3.rumedia-cdn.com
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /cdn/v3/live
+    path: /archives/play/pages?ed=2560
     headers:
-      Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 5.129.251.213
-  port: 46446
+      Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  server: 5.101.115.117
+  port: 8443
   udp: true
   type: vless
-  uuid: e42ba0b1-39a0-48fd-a80f-f3fca3bb4c6d
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  server: 176.123.162.100
+  port: 9880
+  udp: true
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
   tls: true
   reality-opts:
-    public-key: 4CTDvoTom2CNJqszbKlQApLSQJ8ZLNoQrQ5yH7j242I
-    short-id: 039204f18c9c90a0
-  servername: www.cloudflare.com
-  client-fingerprint: safari
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aabb
+  servername: dl.google.com
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: fromabroad-grpc-v1
+    grpc-service-name: grpc-tunnel
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,6 +94,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,5 +105,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
 rules:
 - MATCH,PROXIES

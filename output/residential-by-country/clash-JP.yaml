@@ -15,7 +15,7 @@ proxies:
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /doc/products/view?ed=2560
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:

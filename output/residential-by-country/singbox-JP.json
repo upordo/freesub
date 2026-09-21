@@ -16,7 +16,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/doc/products/view?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
