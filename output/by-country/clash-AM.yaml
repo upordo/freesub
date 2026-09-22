@@ -5,18 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
-  server: swe1.accessgate.link
-  port: 2096
+  server: 192.0.54.30
+  port: 8880
   udp: true
   type: vless
-  uuid: 38eb3e71-4349-4bd6-9baf-9740e1896495
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko
-    short-id: b0d8c9a285c70f6f
-  servername: unpkg.com
-  client-fingerprint: edge
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime35.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
