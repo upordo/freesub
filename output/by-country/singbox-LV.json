@@ -7,17 +7,17 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9034,
+      "server_port": 9033,
       "method": "aes-256-cfb",
-      "password": "Yg4MbdXFQ9HFFVY6"
+      "password": "UTJA57ypk2XKQpnm"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9017,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
@@ -31,25 +31,25 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9007,
+      "server_port": 9034,
       "method": "aes-256-cfb",
-      "password": "kSPmvwdFzGMMW5pY"
+      "password": "Yg4MbdXFQ9HFFVY6"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9033,
+      "server_port": 9036,
       "method": "aes-256-cfb",
-      "password": "UTJA57ypk2XKQpnm"
+      "password": "hbtvgUz5uNYyB3Rf"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe",
       "server": "185.135.86.175",
-      "server_port": 9086,
+      "server_port": 9007,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "kSPmvwdFzGMMW5pY"
     },
     {
       "type": "shadowsocks",
@@ -81,40 +81,23 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe",
-      "server": "185.135.86.175",
-      "server_port": 9036,
-      "method": "aes-256-cfb",
-      "password": "hbtvgUz5uNYyB3Rf"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe",
-      "server": "185.135.86.175",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
-    },
-    {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe",
-      "server": "195.123.213.28",
-      "server_port": 443,
-      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe",
+      "server": "195.74.90.115",
+      "server_port": 9443,
+      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "hub-lv-01.hanvpn.cc",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
-          "short_id": "5c256336e3b673fa"
+          "fingerprint": "ios"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "lv01-grpc-8e47a"
       }
     },
     {
@@ -130,9 +113,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe"
       ]
     },
     {
@@ -147,9 +128,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 06 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 07 - xiaohe",
         "🇱🇻 拉脱维亚 (Latvia) 08 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 10 - xiaohe",
-        "🇱🇻 拉脱维亚 (Latvia) 11 - xiaohe"
+        "🇱🇻 拉脱维亚 (Latvia) 09 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
