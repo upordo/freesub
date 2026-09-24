@@ -26,25 +26,18 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaohe",
-      "server": "5.253.28.240",
-      "server_port": 2443,
-      "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
+      "server": "api-1.hysteria.ltd",
+      "server_port": 4443,
+      "uuid": "73606ef5-51ab-4182-8ae8-41a50e1a9d52",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "api-1.hysteria.ltd",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg",
-          "short_id": "92c32de179e5d908"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "rex-eb0bf76b710ce763"
       }
     },
     {
