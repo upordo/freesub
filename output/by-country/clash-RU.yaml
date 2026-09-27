@@ -5,18 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  server: 94.249.186.68
-  port: 8443
+  server: 147.45.46.3
+  port: 443
   udp: true
   type: vless
-  uuid: b21bfee6-dbd3-4e0b-840f-d66f07bf3186
+  uuid: ce5949b7-5137-4007-8a0a-063aad88b920
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: OAKZv1BA4SuH3tEQGf24i9ZJiKbYQoWoVZwrUdARQwU
-    short-id: 77c5f417fe413756
-  servername: deepl.com
-  client-fingerprint: safari
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: sellflow.org
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   server: 176.32.35.2
   port: 10090
@@ -30,8 +29,8 @@ proxies:
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: 91.240.86.70
-  skip-cert-verify: true
+  sni: itsallproxy.quattro-tech.ru
+  skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: du-rov.secureservice.top
   port: 8443
@@ -46,19 +45,28 @@ proxies:
   servername: du-rov.secureservice.top
   client-fingerprint: random
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  server: 161.104.107.97
+  server: 94.249.187.46
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: IXa3ylzS_jBOAsQy071tIQ
+- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  server: 217.19.122.200
   port: 443
   udp: true
   type: vless
-  uuid: dc0d27ba-34d2-4c8b-9cba-9ddbbb632748
-  flow: xtls-rprx-vision
+  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
   tls: true
-  reality-opts:
-    public-key: V6DsIO1Bnyj5xLsTtYzyz2KGkkpgpt7I3L-SN06Du1Y
-    short-id: 348b9654fcb1
-  servername: www.nvidia.com
-  client-fingerprint: ios
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
+  servername: fbsv6.guardora.pro
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: fbsv6.guardora.pro
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -69,34 +77,8 @@ proxies:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
   servername: ya.ru
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  server: fbsv6.guardora.pro
-  port: 443
-  udp: true
-  type: vless
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  tls: true
-  servername: fbsv6.guardora.pro
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
+  client-fingerprint: random
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  server: 201.51.4.39
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6f73611a-bfd9-4712-9f33-fda2da70332a
-  flow: xtls-rprx-vision
-  tls: true
-  servername: freevk.cryposikel.ru
-  skip-cert-verify: false
-  client-fingerprint: safari
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
   server: 45.130.254.10
   port: 443
   udp: true
@@ -122,7 +104,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -136,6 +117,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
 rules:
 - MATCH,PROXIES
