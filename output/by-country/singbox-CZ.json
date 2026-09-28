@@ -6,34 +6,27 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "153.76.185.86",
-      "server_port": 3090,
-      "uuid": "b55a33d7-83ee-416a-971e-eaaa0c928043",
+      "server": "port2.axiomed.ir",
+      "server_port": 443,
+      "uuid": "73b03366-975a-4ca7-a41c-0f7e1b5d944a",
+      "tls": {
+        "enabled": true,
+        "server_name": "l75yY2sJQN5Fn0Gx.fORNeWIran-1013.worKERS.DeV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "194.87.59.19",
-      "server_port": 2085,
-      "uuid": "b55a33d7-83ee-416a-971e-eaaa0c928043",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - xiaohe",
-      "server": "153.76.185.152",
-      "server_port": 3090,
-      "uuid": "b55a33d7-83ee-416a-971e-eaaa0c928043",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+        "type": "ws",
+        "path": "/vl/olqQqiJtpH7kVUcHl0PXN?ed=2560",
+        "headers": {
+          "Host": "l75yy2sjqn5fn0gx.fornewiran-1013.workers.dev"
+        }
       }
     },
     {
@@ -41,18 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe",
-        "🇨🇿 捷克 (Czech) 03 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe",
-        "🇨🇿 捷克 (Czech) 03 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
