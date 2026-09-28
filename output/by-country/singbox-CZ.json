@@ -6,27 +6,12 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "port2.axiomed.ir",
-      "server_port": 443,
-      "uuid": "73b03366-975a-4ca7-a41c-0f7e1b5d944a",
-      "tls": {
-        "enabled": true,
-        "server_name": "l75yY2sJQN5Fn0Gx.fORNeWIran-1013.worKERS.DeV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "153.76.185.147",
+      "server_port": 3090,
+      "uuid": "dca830a2-3c69-4e1b-bc0b-a2ea22af53ba",
       "transport": {
-        "type": "ws",
-        "path": "/vl/olqQqiJtpH7kVUcHl0PXN?ed=2560",
-        "headers": {
-          "Host": "l75yy2sjqn5fn0gx.fornewiran-1013.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
