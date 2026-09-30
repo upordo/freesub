@@ -5,20 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaohe
-  server: 172.66.47.45
+  server: port2.axiomed.ir
   port: 443
   udp: true
   type: vless
-  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
+  uuid: d443c411-85e4-4e0e-8251-2294d7e7ae0b
   tls: true
-  servername: ezaccess-project-f62c30.pages.dev
+  servername: jwd9bmigrp5s8pqhayvpr6dj6ol.fornewiran-1014.workers.dev
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /vl/II2kyrr06FWkCZfkFs?ed=2560
     headers:
-      Host: ezaccess-project-f62c30.pages.dev
+      Host: jwd9bmigrp5s8pqhayvpr6dj6ol.fornewiran-1014.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

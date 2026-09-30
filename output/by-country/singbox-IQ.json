@@ -6,23 +6,19 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "172.66.47.45",
+      "server": "port2.axiomed.ir",
       "server_port": 443,
-      "uuid": "e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f",
+      "uuid": "d443c411-85e4-4e0e-8251-2294d7e7ae0b",
       "tls": {
         "enabled": true,
-        "server_name": "ezaccess-project-f62c30.pages.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "jwd9bmigrp5s8pqhayvpr6dj6ol.fornewiran-1014.workers.dev",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "path": "/vl/II2kyrr06FWkCZfkFs?ed=2560",
         "headers": {
-          "Host": "ezaccess-project-f62c30.pages.dev"
+          "Host": "jwd9bmigrp5s8pqhayvpr6dj6ol.fornewiran-1014.workers.dev"
         }
       }
     },
