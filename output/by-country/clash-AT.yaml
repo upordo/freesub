@@ -12,19 +12,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇹 奥地利 (Austria) 02 - xiaohe
-  server: 152.53.1.40
-  port: 443
-  udp: true
-  type: vless
-  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
-  servername: at.quattro-tech.ru
-  client-fingerprint: qq
-- name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
   server: 31.77.227.6
   port: 52006
   udp: true
@@ -34,7 +21,19 @@ proxies:
   tls: true
   servername: bigdick.gamegrow.ru
   skip-cert-verify: false
-  client-fingerprint: safari
+- name: 🇦🇹 奥地利 (Austria) 03 - xiaohe
+  server: 2.26.80.235
+  port: 443
+  udp: true
+  type: vless
+  uuid: cb0ccf90-0e8f-4621-b042-4e35c797de2b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _gjcl5q-hkJIFmKYSY9DbBcSiBHK3YUAKOfZzZqnkT8
+    short-id: c17f1d8951b3bf90
+  servername: dl.google.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
